@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the path to your JSON file
-json_file="/path/to/your/version.json"
+json_file="./version.json"
 
 # Read the current version from the JSON file
 current_version=$(cat "$json_file" | grep -oP '(?<=("version": )).*(?=,?)')
